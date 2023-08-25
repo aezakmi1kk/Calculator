@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="description">Calculator</h1>
+      <form class="main_block">
+        <div class="style_block mg">
+          <div class="input_block">
+            <input
+              id="first_input"
+              class="input_form"
+              type="number"
+              placeholder="Введите первое число: "
+            />
+            <input
+              id="second_input"
+              class="input_form"
+              type="number"
+              placeholder="Введите второе число: "
+            />
+          </div>
+        </div>
+        <div class="style_block">
+          <div class="block_action_btn">
+            <button type="reset" id="btn_reset" class="btn btn_reset">C</button>
+            <button type="button" id="btn_plus" class="btn btn_plus">+</button>
+            <button type="button" id="btn_minus" class="btn btn_minus">
+              —
+            </button>
+            <button type="button" id="btn_mult" class="btn btn_mult">✕</button>
+            <button type="button" id="btn_div" class="btn btn_div">/</button>
+            <button type="button" id="btn_percent" class="btn btn_percent">
+              %
+            </button>
+            <button
+              type="button"
+              id="btn_submit"
+              class="btn btn_submit"
+              type="submit"
+            >
+              =
+            </button>
+          </div>
+          <div class="result_form">
+            <p id="result" class="result_description">Result</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

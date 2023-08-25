@@ -1,0 +1,21 @@
+//__INCLUDE NORMALIZE__
+@import "./helpers/_normalize.scss";
+
+//__HELPERS__
+@import "./helpers/variables";
+@import "./helpers/fonts";
+
+//__CORE__
+@import "./core/main-section";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  margin: 0;
+}

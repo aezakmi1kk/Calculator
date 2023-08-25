@@ -1,0 +1,114 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: $defaulGray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.description {
+  font-size: 3rem;
+  color: $darkGray;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.main_block {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: $darkGray;
+  border-radius: 10px;
+}
+.style_block {
+  background-color: $defaultCoral;
+  padding: 10px;
+  border-radius: 5px;
+}
+.style_block:first-child {
+  margin-bottom: 10px;
+}
+.input_block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input_form {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: $lightGray;
+}
+.input_form:focus {
+  outline: none;
+}
+.block_action_btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.btn {
+  width: calc(50% - 5px);
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+.btn_submit {
+  width: 100%;
+}
+.btn_plus:hover,
+.btn_mult:hover,
+.btn_minus:hover,
+.btn_div:hover,
+.btn_percent:hover {
+  background-color: $lightPink;
+}
+.btn_submit:hover {
+  background-color: $mint;
+}
+.btn_reset:hover {
+  background-color: $defaultPink;
+}
+.result_form {
+  width: 100%;
+  text-align: center;
+  background-color: $lightGray;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width: $screen-width-mobile-lg) {
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .description {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  .main_block {
+    width: 180px;
+  }
+  .style_block {
+    background-color: $defaultCoral;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .input_block {
+    gap: 5px;
+  }
+  .block_action_btn {
+    gap: 5px 10px;
+  }
+  .btn {
+    width: calc(50% - 5px);
+    padding: 5px;
+  }
+}
